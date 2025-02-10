@@ -120,6 +120,9 @@ USE_TZ = True
 STATIC_URL = '/static/'
 STATICFILES_DIRS = [BASE_DIR / 'static']
 
+LOGIN_URL = '/login/'  # URL для входа
+LOGIN_REDIRECT_URL = '/'  # Дефолтный редирект (переопределяется в view)
+
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field
 
